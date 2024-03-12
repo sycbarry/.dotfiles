@@ -1,61 +1,8 @@
 local exec = vim.api.nvim_exec -- execute Vimscript
 local set = vim.opt -- global options
 local cmd = vim.cmd -- execute Vim commands
--- local fn    = vim.fn            -- call Vim functions
--- local g = vim.g -- global variables
--- local b     = vim.bo            -- buffer-scoped options
--- local w     = vim.wo            -- windows-scoped options
-
--- cmd('autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=grey') -- to Show whitespace, MUST be inserted BEFORE the colorscheme command
--- vim.g.nord_disable_background = true
--- vim.g.nord_contrast = true
--- vim.g.nord_borders = true
--- require('nord').set()
--- require('paq-nvim').set()
--- cmd("colorscheme jellybeans-nvim")
-
---cmd("colorscheme boo")
---cmd("colorscheme habamax")
---cmd("colorscheme nightfox")
---cmd("colorscheme everblush")
---cmd("colorscheme apprentice")
---cmd("colorscheme poimandres")
--- cmd("colorscheme terafox")
---cmd("colorscheme minimal")
--- cmd("colorscheme aquarium")
--- vim.g.aquarium_style="light"
--- vim.g.aqua_transparency=1
--- cmd("colorscheme oxocarbon")
--- cmd("colorscheme falcon")
-
---cmd("colorscheme lunaperche")
--- cmd("colorscheme sobrio_light")
--- cmd("colorscheme sobrio_verde_vim")
---cmd("colorscheme doubletrouble")
---  cmd("colorscheme oh-lucy")
--- cmd("colorscheme industry")
--- cmd("colorscheme ofirkai")
--- cmd("colorscheme kanagawa")
---cmd("colorscheme falcon")
--- cmd("default")
--- cmd("colorscheme forest_stream")
--- cmd ("colorscheme oxocarbon")
--- cmd ("colorscheme shine")
-
--- cmd("colorscheme slate")
--- cmd("colorscheme solarized")
-
--- cmd('colorscheme darcula-solid')
--- cmd('colorscheme dayfox')
--- cmd('colorscheme sobrio_light_vim')
--- cmd(" colorscheme gruvbox ")
---vim.g.background = "dark"
 vim.g.background = "light"
 vim.o.background = "light"
---cmd("colorscheme NeoSolarized")
--- cmd ("colorscheme dayfox")
---cmd("colorscheme desert")
-
 vim.g.solarized_italic_comments = true
 vim.g.solarized_italic_keywords = true
 vim.g.solarized_italic_functions = true
@@ -63,27 +10,14 @@ vim.g.solarized_italic_variables = false
 vim.g.solarized_contrast = true
 vim.g.solarized_borders = false
 vim.g.solarized_disable_background = false
-
 vim.g.aqua_bold = 1
 vim.g.aqua_transparency = 1
 vim.g.airline_theme="base16_aquarium_dark"
-
--- cmd("colorscheme aquarium")
-
---cmd("colorscheme kanagawa-dragon")
-
---vim.g.mellow_italic_keywords = true
---vim.g.mellow_bold_keywords = true
--- vim.g.mellow_italic_functions = true
-
 vim.o.nolist = true
 vim.o.indentexpr = ''
-
-
 set.guifont = 'DroidSansMono Nerd Font 11'
 set.termguicolors = true -- Enable GUI colors for the terminal to get truecolor
 set.list = false -- show whitespace
-
 set.listchars = {
   nbsp = '⦸', -- CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
   extends = '»', -- RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
@@ -92,15 +26,12 @@ set.listchars = {
   trail = ' ', -- BULLET (U+2022, UTF-8: E2 80 A2)
   space = ' '
 }
-
-
 set.fillchars = {
   -- diff = '∙', -- BULLET OPERATOR (U+2219, UTF-8: E2 88 99)
   eob = ' ', -- NO-BREAK SPACE (U+00A0, UTF-8: C2 A0) to suppress ~ at EndOfBuffer
   fold = ' ', -- MIDDLE DOT (U+00B7, UTF-8: C2 B7)
   vert = ' ' -- remove ugly vertical lines on window division
 }
-
 set.undofile = true
 set.undodir = vim.fn.stdpath("config") .. "/undo"
 set.clipboard = set.clipboard + "unnamedplus" -- copy & paste
