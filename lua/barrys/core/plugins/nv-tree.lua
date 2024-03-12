@@ -1,25 +1,45 @@
 -- empty setup using defaults
+--
+
 return {
 
-	{
-		"nvim-tree/nvim-tree.lua",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		version = "nightly",
-		config = function()
-			-- disable netrw at the very start of your init.lua (strongly advised)
-			vim.g.loaded_netrw = 1
-			vim.g.loaded_netrwPlugin = 1
+    {
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        lazy = false,
+        dependencies = {
+          "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+          require("nvim-tree").setup {}
+        end,
+    },
+        -- Bufferline
+    {
+        'akinsho/bufferline.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons'
+        },
+    },
 
-			-- set termguicolors to enable highlight groups
-			vim.opt.termguicolors = true
+    -- Hop (Better Navigation)
+    {
+        "phaazon/hop.nvim",
+        lazy = true,
+    },
 
-			require("nvim-tree").setup({
-				actions = {
-					open_file = {
-						quit_on_open = true,
-					},
-				},
-			})
-		end,
-	},
+    -- Lualine
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons'
+        },
+    },
+
+    -- Which-key
+    {
+        'folke/which-key.nvim',
+        lazy = true,
+    },
 }
+

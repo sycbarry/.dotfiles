@@ -32,9 +32,13 @@ map("n", "<leader>qp", "<cmd>:cprev<cr>")
 map("n", "<leader>qo", "<cmd>:copen<cr>")
 
 -- lua tree
-map("n", "<Leader>tt", "<cmd>NvimTreeToggle<cr>")
-map("n", "<Leader>tf", "<cmd>NvimTreeFindFileToggle<cr>")
-map("n", "<Leader>tr", "<cmd>NvimTreeRefresh<cr>")
+-- map("n", "<Leader>tt", "<cmd>NvimTreeToggle<cr>")
+-- map("n", "<Leader>tf", "<cmd>NvimTreeFindFileToggle<cr>")
+-- map("n", "<Leader>tr", "<cmd>NvimTreeRefresh<cr>")
+
+-- map("n", "<Leader>tt", "<cmd>Telescope file_browser<CR>")
+map("n", "<Leader>tt", "<cmd>NvimTreeToggle<CR>")
+
 
 -- language server
 map("n", "<Leader>vd", "<cmd>lua vim.lsp.buf.definition()<CR>")

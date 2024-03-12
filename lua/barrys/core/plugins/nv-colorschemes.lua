@@ -4,7 +4,7 @@ return {
 		"catppuccin/nvim",
 		name = "catppuccin",
 		config = function()
-		  require("catppuccin").setup({
+		require("catppuccin").setup({
         styles = {
           comments = { "italic" },
           conditionals = { "bold" },
@@ -16,7 +16,7 @@ return {
         }
       })
 		  --vim.cmd.colorscheme "catppuccin-latte"
-		  vim.cmd.colorscheme "catppuccin"
+		vim.cmd.colorscheme "catppuccin"
 		end,
 	},
 	{ "Mofiqul/dracula.nvim" },
