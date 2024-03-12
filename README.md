@@ -1,1 +1,1 @@
-# .dotfiles (~/.config/nvim/..here..
+# .dotfiles (~/.config/nvim/..here..)
