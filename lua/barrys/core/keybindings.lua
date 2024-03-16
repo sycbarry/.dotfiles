@@ -64,5 +64,5 @@ map("n", "<leader>z", "<cmd>ZenMode<cr>")
 
 
 -- Terminal Emulator
---map("n", "<Leader>cl", "<cmd>ToggleTerm<CR>")
-map("n", "<Leader>cl", "<cmd>:split term://bash<CR>")
+map("n", "<Leader>cl", "<cmd>ToggleTerm<CR>")
+--map("n", "<Leader>cl", "<cmd>:split term://bash<CR>")

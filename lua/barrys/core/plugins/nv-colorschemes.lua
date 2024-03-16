@@ -13,10 +13,14 @@ return {
           keywords = {"bold"},
           functions = { "bold", "italic" },
           strings = {"italic", "bold"},
+          decorators = {"italic", "bold"},
+          properties = {"italic", "bold"},
+          operators = {"italic", "bold"}
         }
       })
-        vim.cmd.colorscheme "evergarden"
-        -- vim.cmd.colorscheme "catppuccin-latte"
+        -- vim.cmd.colorscheme "evergarden"
+        -- vim.cmd.colorscheme "gruvbox"
+        vim.cmd.colorscheme "catppuccin-frappe"
 		end,
 	},
     {
@@ -35,5 +39,29 @@ return {
         },
     },
 	{ "Mofiqul/dracula.nvim" },
+    { "ellisonleao/gruvbox.nvim", priority = 900 , config = true, opts = {
+      terminal_colors = true, -- add neovim terminal colors
+      undercurl = true,
+      underline = true,
+      bold = false,
+      italic = {
+        strings = true,
+        emphasis = true,
+        comments = true,
+        operators = false,
+        folds = true,
+      },
+      strikethrough = true,
+      invert_selection = false,
+      invert_signs = false,
+      invert_tabline = false,
+      invert_intend_guides = false,
+      inverse = true, -- invert background for search, diffs, statuslines and errors
+      contrast = "soft", -- can be "hard", "soft" or empty string
+      palette_overrides = {},
+      overrides = {},
+      dim_inactive = false,
+      transparent_mode = true,
+    }},
 }
 
