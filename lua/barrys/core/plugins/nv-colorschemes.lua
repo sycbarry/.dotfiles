@@ -20,7 +20,9 @@ return {
       })
         -- vim.cmd.colorscheme "evergarden"
         -- vim.cmd.colorscheme "rose-pine-dawn"
-        vim.cmd.colorscheme "gruvbox"
+        -- vim.cmd.colorscheme "default"
+        -- vim.cmd.colorscheme "gruvbox"
+        vim.cmd.colorscheme "catppuccin-frappe"
         -- vim.cmd.colorscheme "catppuccin-latte"
         -- vim.cmd.colorscheme "catppuccin-macchiato"
         -- vim.cmd.colorscheme "dawnfox"

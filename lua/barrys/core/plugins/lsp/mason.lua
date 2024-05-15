@@ -1,7 +1,7 @@
 return {
   "williamboman/mason.nvim",
   opts = {
-    ensure_installed = { "gopls", "java-language-server", "lua-language-server"},
+    ensure_installed = { "gopls", "java-language-server", "lua-language-server", "clangd", "clang-format"},
   },
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
